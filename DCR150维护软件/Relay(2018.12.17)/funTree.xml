@@ -1,0 +1,56 @@
+﻿<?xml version="1.0"?>
+<funtree>
+    <dir name="基本功能"					ename="Basic Function"		 icon="">
+    	  <fun name="对时" 		      ename="System Time"        class="CSystemTimeFun" 		      icon="documentOpen.png"		  WindowType="1" IsNeedPara="0" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="0"/> 
+    	  <fun name="信号复归" 		  ename="Reset Signal" 		   class="CResetSignalFun" 	        icon="documentOpen.png" 		WindowType="0" IsNeedPara="0" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="0"/>
+    	  <fun name="刷新api参数" 	ename="Read api para"      class="CReadParaFileFun" 	      icon="documentOpen.png"		  WindowType="2" IsNeedPara="0" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="0"/>  
+    </dir>
+    <dir name="测控功能"          ename="View"               icon="documentOpen.png">       
+    	  <fun name="遥信" 		      ename="BI" 			           class="CYXFun" 			            icon="documentOpen.png" 	  WindowType="1" IsNeedPara="1" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="1"/>
+    	  <fun name="遥测"		      ename="AI" 			           class="CReadAIFun" 	     	      icon="documentOpen.png" 	  WindowType="1" IsNeedPara="1" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="1"/>
+      	<fun name="电度" 		      ename="CI" 						     class="CCIFun" 			            icon="documentOpen.png" 	 	WindowType="1" IsNeedPara="1" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="1"/>
+      	<fun name="遥控测试" 		  ename="Remote Control"     class="CYKFun" 		            	icon="documentOpen.png" 		WindowType="1" IsNeedPara="1" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="0"/>
+    	  <fun name="保护测量值"    ename="Measure Value"      class="CReadMeasureFun" 	        icon="documentOpen.png" 	  WindowType="1" IsNeedPara="1" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="1"/>
+    	  <fun name="继电器字状态" 	ename="RelayWord State"    class="CRelayWordFun" 		        icon="documentOpen.png" 	  WindowType="1" IsNeedPara="1" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="1"/>        
+    </dir>                      
+    <dir name="报告查询"          ename="Report"             icon="">	
+    	  <fun name="SOE报告" 		  ename="SOEReport" 		     class="CSOEReportFun" 		        icon="documentOpen.png" 		WindowType="1" IsNeedPara="1" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="1"/>
+        <fun name="动作报告" 		  ename="TripReport" 		     class="CTripReportFun" 		      icon="documentOpen.png" 		WindowType="1" IsNeedPara="1" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="1"/>
+        <fun name="录波文件" 		  ename="Disturbance Data"   class="CTransientFun" 		        icon="documentOpen.png" 		WindowType="1" IsNeedPara="0" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="1"/>
+        <fun name="事件报告" 		  ename="EventReport" 		   class="CEventReportFun"        	icon="documentOpen.png" 		WindowType="1" IsNeedPara="1" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="1"/>
+        <fun name="模拟SOE报告" 	ename="Simulate SOEReport" class="CStartSimSOEReportFun" 	  icon="documentOpen.png" 		WindowType="1" IsNeedPara="1" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="0"/>
+        <fun name="模拟动作报告"  ename="Simulate TripReport" class="CStartSimTripReportFun"  icon="documentOpen.png"     WindowType="1" IsNeedPara="1" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="0"/>
+    </dir>              
+    <dir name="系统设定"          ename="State"              icon=""> 
+    	  <fun name="定值" 		      ename="Setting" 		       class="CReadAllSettingFun" 	    icon="documentOpen.png" 		WindowType="1" IsNeedPara="1" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="1"/> 
+    	  <fun name="系数" 		      ename="Coefficient" 		   class="CCofficeFun" 		          icon="documentOpen.png" 		WindowType="1" IsNeedPara="1" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="1"/>   
+        <fun name="软压板" 		    ename="SoftBoard" 	       class="CSoftBoardFun" 		        icon="documentOpen.png" 		WindowType="1" IsNeedPara="1" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="1"/>
+        <fun name="MMI参数" 		  ename="MMI Para" 		       class="CMMIParaFun" 		          icon="documentOpen.png" 		WindowType="1" IsNeedPara="0" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="1"/>
+        <fun name="逻辑方程" 		  ename="Logic" 			       class="CLogicFileFun" 		        icon="documentOpen.png" 		WindowType="1" IsNeedPara="0" IsNeedComm="0" IsNeedBoot="2" IsNeedSave="0"/>
+        <fun name="SCADA参数" 		ename="SCADA Para" 		     class="CBIParaFun" 		          icon="documentOpen.png" 		WindowType="1" IsNeedPara="1" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="1"/>
+	 <!-- <fun name="录波分析" 		  ename="Waveform Analysis" 	class="CWaveAnalysis" 		      icon="documentOpen.png" 		WindowType="1" IsNeedPara="0" IsNeedComm="0" IsNeedBoot="2" IsNeedSave="0"/> -->
+        <fun name="装置综合参数" 	ename="Equip Information"  class="CReadEquipParaFun" 	      icon="documentOpen.png" 		WindowType="1" IsNeedPara="1" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="1"/>  
+    </dir>              
+    <dir name="Boot功能"          ename="Boot Function"       icon="" >
+    	  <fun name="进入Boot" 	    ename="Boot Mode" 		      class="CForceInBootFun" 	      icon="documentOpen.png" 		WindowType="0" IsNeedPara="0" IsNeedComm="0" IsNeedBoot="2" IsNeedSave="0"/>
+   <!-- <fun name="装置复位,同时清NVRAM" ename="Reset and clean NVRAM" 	class="CColdResetSysFun" 	icon="documentOpen.png	WindowType="0" IsNeedPara="0" IsNeedComm="0" IsNeedBoot="2" IsNeedSave="0"/> --> 
+    	  <fun name="下装文件" 		  ename="Download Files" 		  class="CDownloadFileFun" 	      icon="documentOpen.png" 		WindowType="0" IsNeedPara="0" IsNeedComm="1" IsNeedBoot="1" IsNeedSave="0"/> 
+	      <fun name="参数文件" 	    ename="Sys File"            class="CReadFileListFun" 	      icon="documentOpen.png" 		WindowType="1" IsNeedPara="0" IsNeedComm="1" IsNeedBoot="1" IsNeedSave="1"/>
+	      <fun name="装置复位" 		  ename="Reset" 			        class="CWarmResetSysFun" 	      icon="documentOpen.png" 		WindowType="0" IsNeedPara="0" IsNeedComm="0" IsNeedBoot="2" IsNeedSave="0"/>  
+    </dir> 
+    <dir name="主接线图"          ename="Main Draw"           icon="" >
+    	  <fun name="绘制单元位图"  ename="Draw Unit" 		      class="CDrawUnitFun" 		        icon="documentOpen.png"		  WindowType="1" IsNeedPara="0" IsNeedComm="0" IsNeedBoot="2" IsNeedSave="0"/>
+	      <fun name="绘制主接线图" 	ename="Draw Hookup" 		    class="CDrawHookupFun" 		      icon="documentOpen.png"		  WindowType="1" IsNeedPara="0" IsNeedComm="0" IsNeedBoot="2" IsNeedSave="0"/>
+    </dir> 
+        <dir name="规约测试"      ename="Test Statute"        icon="" >
+        <fun name="IEC103规约" 	  ename="Test103" 		        class="CTest103Fun" 		        icon="documentOpen.png"		  WindowType="1" IsNeedPara="0" IsNeedComm="0" IsNeedBoot="2" IsNeedSave="0"/>
+    	  <fun name="Modbus规约"    ename="TestModbus" 		      class="CTestModbusFun" 		      icon="documentOpen.png"		  WindowType="1" IsNeedPara="0" IsNeedComm="0" IsNeedBoot="2" IsNeedSave="0"/>
+    </dir>
+    <dir name="出厂测试" ename="Factory Test"                 icon="" >
+    	  <fun name="LED测试"   		ename="LED Test" 		        class="CLEDTestFun" 		        icon="documentOpen.png"	    WindowType="0" IsNeedPara="0" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="0"/>
+    	  <fun name="出口检测" 		  ename="Output Test" 		    class="CTestOutputFun" 		      icon="documentOpen.png" 		WindowType="1" IsNeedPara="1" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="0"/>
+	      <fun name="自动校正系数" 	ename="Auto Adjust" 		    class="CAutoAdjustFun" 		      icon="documentOpen.png"		  WindowType="0" IsNeedPara="0" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="0"/>
+	 <!-- <fun name="查询内存信息" 	ename="Read ReflashMemory"  class="CMemoryFun" 		          icon="documentOpen.png" 		WindowType="1" IsNeedPara="0" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="1"/> -->
+	      <fun name="装置调试检测信息" ename="Equip Test" 		  class="CEquipTestFun" 		      icon="documentOpen.png" 	  WindowType="1" IsNeedPara="0" IsNeedComm="1" IsNeedBoot="0" IsNeedSave="1"/>
+    </dir> 
+</funtree>
